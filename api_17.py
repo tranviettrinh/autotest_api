@@ -197,7 +197,7 @@ def test_start_time_1(list_test_case):
 		dulieu.append(dulieu)
 
 	try:
-		con = cx_Oracle.connect('ipcc_chat/Hoangbao09@103.82.22.149:9521/ECONTACT')
+		con = cx_Oracle.connect('user/pass@ip:port/ECONTACT')
 
 		# Now execute the sqlquery
 		cursor = con.cursor()
@@ -232,585 +232,585 @@ def test_start_time_1(list_test_case):
 	assert err == status
 	assert dataApi != None
 	assert dulieu==dulieudb
-# def test_start_time_2(list_test_case): 
-# 	data=list_test_case[1]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_start_time_3(list_test_case): 
-# 	data=list_test_case[2]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == 'None'
-# def test_start_time_4(list_test_case): 
-# 	data=list_test_case[3]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_start_time_2(list_test_case): 
+	data=list_test_case[1]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_start_time_3(list_test_case): 
+	data=list_test_case[2]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == 'None'
+def test_start_time_4(list_test_case): 
+	data=list_test_case[3]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_start_time_5(list_test_case): 
-# 	data=list_test_case[4]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_start_time_5(list_test_case): 
+	data=list_test_case[4]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_start_time_6(list_test_case): 
-# 	data=list_test_case[5]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_start_time_6(list_test_case): 
+	data=list_test_case[5]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_start_time_7(list_test_case): 
-# 	data=list_test_case[6]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_start_time_7(list_test_case): 
+	data=list_test_case[6]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_start_time_8(list_test_case): 
-# 	data=list_test_case[7]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_start_time_8(list_test_case): 
+	data=list_test_case[7]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_start_time_9(list_test_case): 
-# 	data=list_test_case[8]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_start_time_9(list_test_case): 
+	data=list_test_case[8]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_start_time_10(list_test_case): 
-# 	data=list_test_case[9]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_start_time_10(list_test_case): 
+	data=list_test_case[9]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# ##############################################################################	END_TIME
-# def test_end_time_11(list_test_case): 
-# 	data=list_test_case[10]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+##############################################################################	END_TIME
+def test_end_time_11(list_test_case): 
+	data=list_test_case[10]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_end_time_12(list_test_case): 
-# 	data=list_test_case[11]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_end_time_12(list_test_case): 
+	data=list_test_case[11]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_end_time_13(list_test_case): 
-# 	data=list_test_case[12]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_end_time_13(list_test_case): 
+	data=list_test_case[12]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_end_time_14(list_test_case): 
-# 	data=list_test_case[13]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_end_time_14(list_test_case): 
+	data=list_test_case[13]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_end_time_15(list_test_case): 
-# 	data=list_test_case[14]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_end_time_15(list_test_case): 
+	data=list_test_case[14]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# ############################################################################## QUEUE_ID
-# def test_queue_id_16(list_test_case): 
-# 	data=list_test_case[15]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+############################################################################## QUEUE_ID
+def test_queue_id_16(list_test_case): 
+	data=list_test_case[15]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_queue_id_17(list_test_case): 
-# 	data=list_test_case[16]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == []
-# def test_queue_id_18(list_test_case): 
-# 	data=list_test_case[17]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_queue_id_17(list_test_case): 
+	data=list_test_case[16]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == []
+def test_queue_id_18(list_test_case): 
+	data=list_test_case[17]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_queue_id_19(list_test_case):
-# 	data=list_test_case[18]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
+def test_queue_id_19(list_test_case):
+	data=list_test_case[18]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
 
-# def test_queue_id_20(list_test_case): 
-# 	data=list_test_case[19]
-# 	converstation=ConverstationAPI(data[2],data[3],data[4])
-# 	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =str(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# ################################################################################# visitor_username
-# def test_visitor_username_21(list_test_case): 
-# 	data=list_test_case[20]
-# 	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi != None
-# def test_visitor_username_22(list_test_case): 
-# 	data=list_test_case[21]
-# 	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_visitor_username_23(list_test_case): 
-# 	data=list_test_case[22]
-# 	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_visitor_username_24(list_test_case): 
-# 	data=list_test_case[23]
-# 	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_visitor_username_25(list_test_case): 
-# 	data=list_test_case[24]
-# 	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_visitor_username_26(list_test_case): 
-# 	data=list_test_case[25]
-# 	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# ################################################################################# agent_name
-# def test_agent_name_27(list_test_case): 
-# 	data=list_test_case[26]
-# 	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi != None
-# def test_agent_name_28(list_test_case): 
-# 	data=list_test_case[27]
-# 	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_agent_name_29(list_test_case): 
-# 	data=list_test_case[28]
-# 	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_agent_name_30(list_test_case): 
-# 	data=list_test_case[29]
-# 	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_agent_name_31(list_test_case): 
-# 	data=list_test_case[30]
-# 	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_agent_name_32(list_test_case): 
-# 	data=list_test_case[31]
-# 	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# ################################################################################# source
-# def test_source_33(list_test_case): 
-# 	data=list_test_case[32]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_source_34(list_test_case): 
-# 	data=list_test_case[33]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_source_35(list_test_case): 
-# 	data=list_test_case[34]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_source_36(list_test_case): 
-# 	data=list_test_case[35]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_source_37(list_test_case): 
-# 	data=list_test_case[36]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi != None
-# def test_source_38(list_test_case): 
-# 	data=list_test_case[37]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi != None
-# def test_source_39(list_test_case): 
-# 	data=list_test_case[38]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi != None
-# def test_source_40(list_test_case): 
-# 	data=list_test_case[39]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi != None
-# def test_source_41(list_test_case): 
-# 	data=list_test_case[40]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi != None
-# def test_source_42(list_test_case): 
-# 	data=list_test_case[41]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi != None
-# def test_source_43(list_test_case): 
-# 	data=list_test_case[42]
-# 	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# ####################################################################################### conversation_id
-# def test_conversation_id_44(list_test_case): 
-# 	data=list_test_case[43]
-# 	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi != None
-# def test_conversation_id_45(list_test_case): 
-# 	data=list_test_case[44]
-# 	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_conversation_id_46(list_test_case): 
-# 	data=list_test_case[45]
-# 	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_conversation_id_47(list_test_case): 
-# 	data=list_test_case[46]
-# 	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_conversation_id_48(list_test_case): 
-# 	data=list_test_case[47]
-# 	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
-# def test_conversation_id_49(list_test_case): 
-# 	data=list_test_case[48]
-# 	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
-# 	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
-# 	mess =str(acc_info['message'])
-# 	err = str(acc_info['errorCode'])
-# 	dataApi =(acc_info['data'])
-# 	status = str(data[0])
-# 	note= str(data[1])
-# 	assert mess == note 
-# 	assert err == status
-# 	assert dataApi == None
+def test_queue_id_20(list_test_case): 
+	data=list_test_case[19]
+	converstation=ConverstationAPI(data[2],data[3],data[4])
+	acc_info = json.loads(requests.get(converstation.api_url_1()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =str(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+################################################################################# visitor_username
+def test_visitor_username_21(list_test_case): 
+	data=list_test_case[20]
+	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi != None
+def test_visitor_username_22(list_test_case): 
+	data=list_test_case[21]
+	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_visitor_username_23(list_test_case): 
+	data=list_test_case[22]
+	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_visitor_username_24(list_test_case): 
+	data=list_test_case[23]
+	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_visitor_username_25(list_test_case): 
+	data=list_test_case[24]
+	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_visitor_username_26(list_test_case): 
+	data=list_test_case[25]
+	converstation=ConverstationAPIvisitor_username(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_2()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+################################################################################# agent_name
+def test_agent_name_27(list_test_case): 
+	data=list_test_case[26]
+	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi != None
+def test_agent_name_28(list_test_case): 
+	data=list_test_case[27]
+	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_agent_name_29(list_test_case): 
+	data=list_test_case[28]
+	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_agent_name_30(list_test_case): 
+	data=list_test_case[29]
+	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_agent_name_31(list_test_case): 
+	data=list_test_case[30]
+	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_agent_name_32(list_test_case): 
+	data=list_test_case[31]
+	converstation=ConverstationAPIagent_name(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_3()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+################################################################################# source
+def test_source_33(list_test_case): 
+	data=list_test_case[32]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_source_34(list_test_case): 
+	data=list_test_case[33]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_source_35(list_test_case): 
+	data=list_test_case[34]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_source_36(list_test_case): 
+	data=list_test_case[35]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_source_37(list_test_case): 
+	data=list_test_case[36]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi != None
+def test_source_38(list_test_case): 
+	data=list_test_case[37]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi != None
+def test_source_39(list_test_case): 
+	data=list_test_case[38]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi != None
+def test_source_40(list_test_case): 
+	data=list_test_case[39]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi != None
+def test_source_41(list_test_case): 
+	data=list_test_case[40]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi != None
+def test_source_42(list_test_case): 
+	data=list_test_case[41]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi != None
+def test_source_43(list_test_case): 
+	data=list_test_case[42]
+	converstation=ConverstationAPIsource(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_4()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+####################################################################################### conversation_id
+def test_conversation_id_44(list_test_case): 
+	data=list_test_case[43]
+	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi != None
+def test_conversation_id_45(list_test_case): 
+	data=list_test_case[44]
+	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_conversation_id_46(list_test_case): 
+	data=list_test_case[45]
+	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_conversation_id_47(list_test_case): 
+	data=list_test_case[46]
+	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_conversation_id_48(list_test_case): 
+	data=list_test_case[47]
+	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
+def test_conversation_id_49(list_test_case): 
+	data=list_test_case[48]
+	converstation=ConverstationAPIconversation_id(data[2],data[3],data[4],data[5])
+	acc_info = json.loads(requests.get(converstation.api_url_5()).text)
+	mess =str(acc_info['message'])
+	err = str(acc_info['errorCode'])
+	dataApi =(acc_info['data'])
+	status = str(data[0])
+	note= str(data[1])
+	assert mess == note 
+	assert err == status
+	assert dataApi == None
 
